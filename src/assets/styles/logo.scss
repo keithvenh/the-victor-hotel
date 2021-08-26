@@ -1,16 +1,7 @@
 @import 'variables';
 
-.app-header {
-    height: 70px;
-    width: 100vw;
-    background-color: $navy;
-    border-bottom: 2px solid #999;
-    box-shadow: 2px 3px #999;
-    display: flex;
-    justify-content: space-between;
-}
-
 // ===== LOGO BOX ===== //
+
 .logo-container {
     color: $white;
     display: flex;
@@ -43,7 +34,8 @@
     text-decoration: none;
     padding: 0;
     position: absolute;
-    right: 0;
+    right: -2px;
+    top: 4px;
     margin: 0;
 }
 
@@ -71,33 +63,4 @@
     flex: 1;
     text-decoration: none;
     box-sizing: border-box;
-}
-
-// ===== NAVIGATION ===== //
-
-.nav {
-    height: 70px;
-    box-sizing: border-box;
-}
-
-.nav-list {
-    display: flex;
-    padding: 32px;
-    box-sizing: border-box;
-    align-items: center;
-}
-
-.nav-item {
-    text-transform: uppercase;
-    font-size: 0.9em;
-    margin-right: 20px;
-    font-family: $poppins;
-    letter-spacing: 2px;
-    box-sizing: border-box;
-    a {
-        color: $white;
-        &:hover {
-            color: $gold;
-        }
-    }
 }

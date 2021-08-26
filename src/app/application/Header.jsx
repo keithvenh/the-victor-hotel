@@ -4,7 +4,7 @@ const Header = (props) => {
     return (
         <header className="app-header">
             <Logo />
-            <Navbar />
+            <Navbar navClick={props.navClick} />
         </header>
     )
 }

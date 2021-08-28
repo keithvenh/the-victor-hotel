@@ -1,4 +1,5 @@
 import React from 'react';
+import displayDate from '../../helpers/displayDate';
 
 class School extends React.Component {
     constructor(props) {
@@ -12,7 +13,10 @@ class School extends React.Component {
         console.log("IN SCHOOL CLASS");
         console.log(new Date())
         return (
-            <h3 className='date'>{this.state.today.toLocaleDateString()}</h3>
+            <div className='todays-date'>
+                <p className='date-label'>Today is:</p>
+                <h3 className='date'>{displayDate(this.state.today)}</h3>
+            </div>
         )
     }
 }
